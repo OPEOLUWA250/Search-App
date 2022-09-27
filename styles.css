@@ -1,0 +1,55 @@
+@import url(base.css);
+
+.blue {
+    color: var(--logo-blue);
+    font-size: 1.5rem;
+}
+
+.red {
+    color: var(--logo-red);
+    font-size: 1.5rem;
+}
+
+.green {
+    color: var(--logo-green);
+    font-size: 1.5rem;
+}
+
+.yellow {
+    color: var(--logo-yellow);
+    font-size: 1.5rem;
+}
+
+.exclaim {
+    display: inline-block;
+    font-size: 2rem;
+    transform: rotate(12deg);
+}
+
+@media only screen and (min-width: 768px) {
+    .exclaim {
+        font-size: 4 rem;
+    }
+}
+
+.offscreen {
+    position: absolute;
+    left: -10000px;
+}
+
+.none {
+    display: none;
+}
+
+.flex {
+     display: flex;
+}
+
+.searchEntry {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start; 
+    padding-top: 2.5rem;
+}
+

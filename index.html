@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+      <!-- Bootstrap icon -->
+      <link rel="stylesheet"
+       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+      
+      <!-- Google fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap"
+       rel="stylesheet">
+
+      <!-- CSS link -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Search App</title>
+</head>
+<body>
+    
+  <main>
+      <h1 class="offscreen">Search Me A Wikipedia Powered Search Engine</h1>
+      <section class="searchEntry">
+          <h2 class="offscreen">Search Term Entry</h2>
+          <div class="logo" aria-hidden="true">
+              <span class="blue">S</span>
+              <span class="red">e</span>
+              <span class="yellow">a</span>
+              <span class="blue">r</span>
+              <span class="green">c</span>
+              <span class="red">h</span>
+              <span class="blue">M</span>
+              <span class="yellow">e</span>
+              <span class="red exclaim">!</span> 
+          </div>
+          <form  id="searchBar" class="searchBar">
+              <label for="search" class="offscreen">Enter a search term or phrase</label>
+              <input type="text" autocomplete="off" id="search">
+              <div id="clear" class="none button clear" role="button" tabindex="0" aria-label="clear search term">
+                <i class="bi bi-x"></i>
+              </div>
+              <button id="searchButton" class="SearchButton" type="submit" aria-label="Submit button">
+                <i class="bi bi-search"></i>
+              </button>
+          </form>
+      </section>
+
+      <section class="results">
+          <h2 class="offscreen">Search Results</h2>
+          <div class="statsBar">
+              <div id="stats" class="stats" aria-live="assertive"></div>
+          </div>
+          <div id="SearchResults" class="searchResults">
+             <div class="resultItem">
+                 <div class="resultTitle">
+                     <a href="">Dachsund</a>
+                 </div>
+                 <div class="resultContents">
+                     <div class="resultImage"><img src="" alt="Dachsund"></div>
+                 </div>
+                 <div class="resultText">
+                     <p class="resultDescription">The dachsund (UK: DAKS-and, DASH-, _huund, _huunt or US: DAHKS...</p>
+                 </div>
+             </div>
+          </div>
+      </section>
+  </main>
+
+  <footer>
+      <p>Proudly made with ❤ by <br>  
+     <a href="https://opeoluwa250.github.io/Portfolio-website/">Opeoluwa Adejumo</a>
+     </p>
+  </footer>
+
+</body>
+<script src="main.js"></script>
+</html>

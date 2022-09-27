@@ -28,7 +28,7 @@
 
 @media only screen and (min-width: 768px) {
     .exclaim {
-        font-size: 4 rem;
+        font-size: 3rem;
     }
 }
 
@@ -46,10 +46,227 @@
 }
 
 .searchEntry {
-    display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: flex-start; 
     padding-top: 2.5rem;
 }
+
+.logo {
+    letter-spacing: -2px;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .logo {
+        font-size: 5rem;
+        letter-spacing: -8px;
+    }
+}
+
+.searchBar {
+    width: 95vw;
+    display: flex;
+    border: 2px solid var(--search-bar-border);
+    border-radius: 2rem;
+    padding: 0.15rem 0.25rem 0.15rem 0.75rem;
+    margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .searchBar {
+       width: 70vw;
+      padding: 0.5rem 1.5rem;
+  }
+}
+
+  input[type="text"] {
+      flex-grow: 1;
+      font-size: 1rem;
+      text-align: left;
+      letter-spacing: 0.1rem;
+      border: 0;
+      outline: 0;
+      min-width: 9rem;
+      caret-color: var(--logo-red);
+  }
+
+  @media only screen and (min-width: 768px) {
+    input[type="text"] {
+       font-size: 1.25rem;
+    }
+  }
+
+  button {
+      cursor: pointer;
+      border: 0;
+      background: transparent;
+      min-width: 2rem;
+      min-height: 2rem;
+      outline: none;
+  }
+
+  button > i:hover,
+  button > i:focus,
+  .clear > i:hover,
+  .clear > i:focus {
+       padding-bottom: 0.5rem;
+       border-bottom-width: 1px;
+       border-bottom-style: solid;
+       color: var(--logo-green);
+  }
+
+  button > i {
+      font-family: "Font Awesome 5 Free";
+  }
+
+  @media only screen and (min-width: 768px) {
+    button > i {
+       font-size: 1.5rem;
+    }
+  }
+
+    .clear {
+       justify-content: center;
+       align-items: center;
+       color: var(--stats-color);
+       border-right: thin solid var(--clear-button-color);
+       font-size: 1.1rem;
+    }
+
+    @media only screen and (min-width: 768px) {
+       .clear  {
+           padding: 0 0.5rem;
+        }
+      }
+
+  .searchBar:hover,
+  .searchBar:focus-within {
+      box-shadow: 0 3px 5px 2px var(--search-bar-border);
+  }    
+
+  .results {
+    width: 95vw;  
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .results  {
+        width: 70vw;
+     }
+   }
+
+   @media only screen and (min-width: 1025px) {
+    .results  {
+        width: 70vw;
+     }
+   }
+
+   .statsBar {
+       width: 100%;
+   }
+
+   .stats {
+       color: var(--stats-color); 
+       font-size: 0.75rem;
+   }
+
+   @media only screen and (min-width: 768px) {
+    .stats {
+        font-size: 1rem;
+     }
+   }
+
+   .searchResult {
+       width: 100%;
+   }
+
+   .resultItem {
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0.25rem 0;
+   }
+
+   @media only screen and (min-width: 768px) {
+    .resultItem {
+        padding: 0.5rem 0;
+     }
+   }
+
+   .resultTitle {
+       width: 100%;
+       text-align: left;
+       font-size: 1rem;
+       line-height: 1.5rem;
+       margin-bottom: 0.25rem;
+       overflow: hidden;
+       white-space: nowrap;
+       text-overflow: ellipsis;
+       padding: 3px 2px;
+   }
+
+   @media only screen and (min-width: 768px) {
+    .resultTitle {
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+        margin-bottom: 0.5rem; 
+     }
+   }
+
+   .resultTitle > a {
+       color: var(--link-color);
+       text-decoration: none;
+       cursor: pointer;
+   }
+
+   .resultTitle > a:visited {
+       color: var(--link-visited-color);
+   }
+
+   .resultTitle > a:hover {
+       text-decoration: underline;
+   }
+
+   .resultTitle > a:focus {
+       outline: 2px solid var(--link-outline-color);
+   }
+
+   .resultContent {
+       display: flex;
+       width: 100%;
+   }
+
+   .resultImage {
+       margin-right: 0.5rem;
+   }
+
+   .resultText p {
+       flex-grow: 1;
+       font-size: 1rem;
+       line-height: 20px;
+       max-height: 3.5rem;
+       overflow: hidden;
+       text-overflow: ellipsis;
+   }
+
+   @media only screen and (min-width: 768px) {
+    .resultText {
+        font-size: 1rem;
+        line-height: 1.75rem;
+     }
+   }
+
+  
+  
+ 
+
 
